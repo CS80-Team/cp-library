@@ -2,6 +2,7 @@
 \usepackage{lipsum}
 \usepackage{blindtext}
 \usepackage{titlesec}
+\usepackage{subfiles}
 
 \title{Competitive Programming Library}
 %\author{}%
@@ -10,8 +11,20 @@
 \begin{document}
 	\maketitle
 	\tableofcontents
-	\include{DataStructures/ds}
-	\include{BitManipulation/bm}
-	\include{Algorithms/algo}
-	\include{DynamicProgramming/dp}
+	\newpage
+	
+	\subfile{DataStructures/ds}
+	\newpage
+	
+	\subfile{BitManipulation/bm}
+	\newpage
+	
+	\subfile{Algorithms/algo}
+	\newpage
+	
+	\subfile{DynamicProgramming/dp}
+	\newpage
+	
+	\subfile{GraphTheory/gt}
+	\newpage
 \end{document}
