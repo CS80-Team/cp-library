@@ -1,30 +1,51 @@
-\documentclass{article}
+% Packages
+\documentclass[a4paper]{article}
 \usepackage{lipsum}
 \usepackage{blindtext}
 \usepackage{titlesec}
 \usepackage{subfiles}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+% Custom commands -----------
+
+% include a code sample from a file
+\newcommand{\includeCode}[4]{\lstinputlisting[language=#1, title=#2, style=#3]{#4}}
+
+% include a new sub file
+\newcommand{\inculdeSubFile}[1]{\subfile{#1}\newpage}
+
+
+
+% End of Custom commands ----
+
+
+% Importing custom styles from `Styles` file
+\input{Styles/BlackWhite.sty}
+
+% Set global margins
+\geometry{
+	left=2cm,
+	right=2cm,
+	top=2cm,
+	bottom=2cm
+}
 
 \title{Competitive Programming Library}
-%\author{}%
+\author{Too bad to be Accepted}
 \date{ }
 
 \begin{document}
 	\maketitle
 	\tableofcontents
 	\newpage
+
+	\inculdeSubFile{DynamicProgramming/dp}
+	\inculdeSubFile{BitManipulation/bm}
+	\inculdeSubFile{Algorithms/algo}
+	\inculdeSubFile{DataStructures/ds}
+	\inculdeSubFile{GraphTheory/gt}
 	
-	\subfile{DataStructures/ds}
-	\newpage
-	
-	\subfile{BitManipulation/bm}
-	\newpage
-	
-	\subfile{Algorithms/algo}
-	\newpage
-	
-	\subfile{DynamicProgramming/dp}
-	\newpage
-	
-	\subfile{GraphTheory/gt}
-	\newpage
 \end{document}
