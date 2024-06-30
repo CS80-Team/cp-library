@@ -1,4 +1,4 @@
-#define INF (1e18)
+#define INF (1e18) // for int defined as ll
 
 int n, m;
 vector<vector<pair<int, int>>> adj;

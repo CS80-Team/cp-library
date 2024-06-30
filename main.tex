@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{color}
 \usepackage{fancyhdr}
+\usepackage{amsmath}
 
 \newcommand{\teamname}{Too bad to be Accepted}
 \newcommand{\univname}{Alexandria University}
@@ -21,10 +22,10 @@
 % Custom commands -----------
 
 % include a code sample from a file
-\newcommand{\includeCode}[4]{\lstinputlisting[language=#1, title=#2, style=#3]{#4}}
+\newcommand{\includeCode}[4]{\begin{center} \lstinputlisting[language=#1, title=#2, style=#3]{#4} \end{center}}
 
 % include a new sub file
-\newcommand{\inculdeSubFile}[1]{\subfile{#1}\newpage}
+\newcommand{\includeSubFile}[1]{\subfile{#1}\newpage}
 
 
 % End of Custom commands ----
@@ -55,10 +56,11 @@
 	\tableofcontents
 	\newpage
 
-	\inculdeSubFile{DynamicProgramming/dp}
-	\inculdeSubFile{BitManipulation/bm}
-	\inculdeSubFile{Algorithms/algo}
-	\inculdeSubFile{DataStructures/ds}
-	\inculdeSubFile{GraphTheory/gt}
+	\includeSubFile{DynamicProgramming/dp}
+	\includeSubFile{BitManipulation/bm}
+	\includeSubFile{Algorithms/algo}
+	\includeSubFile{DataStructures/ds}
+	\includeSubFile{Counting/cnt}
+	\includeSubFile{GraphTheory/gt}
 	
 \end{document}
