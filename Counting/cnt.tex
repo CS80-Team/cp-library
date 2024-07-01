@@ -3,10 +3,10 @@
 		\[
 		C(n,k) = \dfrac{n!}{(n-k)!k!} = \dfrac{n*(n-1)*(n-2)*\ldots*(n-k+1)}{k!}
 		\]
-	
+
 		\subsubsection{Fast nCr}
 			\[
 			C(n,k) = \dfrac{n*(n-1)*(n-2)*\ldots*(n-k+1)}{1*2*3*\ldots*k} = \prod\limits_{i=0}^{k-1} \dfrac{n-i}{i+1} = \prod\limits_{i=0}^{k-1} (n-i)(i+1)^{-1}
-			\]
-			
+    			\]
+
 			\includeCode{c++}{Fast nCr}{lhstyle}{Fast_nCr.cpp}
