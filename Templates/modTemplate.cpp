@@ -12,7 +12,7 @@ int sub(int a, int b) {
 
 int power(int a, int e) {
     int res = 1;
-    while(e) {if(e & 1) res *= a; a *= a; e >>= 1;}
+    while(e) {if(e & 1) res = res * a % MOD; a = a * a % MOD; e >>= 1;}
     return res;
 }
 
