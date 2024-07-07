@@ -31,14 +31,26 @@ private:
 
         return merge(query(l, r, 2 * x + 1, lx, mid), query(l, r, 2 * x + 2, mid, rx));
     }
+    void build(vector<int> &a, int x, int lx, int rx) {
+        if (rx - lx == 1) {
+            if (lx < a.size()) {
+                values[x] = single(a[lx]);
+            }
+            return;
+        }
+        int m = (lx + rx) / 2;
+        build(a, 2 * x + 1, lx, m);
+        build(a, 2 * x + 2, m, rx);
+        values[x] = merge(values[2 * x + 1], values[2 * x + 2]);
+    }
 
 public:
     int size{};
     vector<Node> values;
 
-
-#warning ["not implemented yet"];
-    void build() {}
+    void build(vector<int> &a) {
+        build(a, 0, 0, size);
+    }
 
     void init(int _size) {
         size = 1;
