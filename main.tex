@@ -22,7 +22,12 @@
 % Custom commands -----------
 
 % include a code sample from a file
-\newcommand{\includeCode}[4]{\begin{center} \lstinputlisting[language=#1, title=#2, style=#3]{#4} \end{center}}
+\newcommand{\includeCode}[4]{%
+    \begin{center}
+        \lstinputlisting[language=#1, title=\textbf{\textit{#2}}, style=#3]{#4}
+        \rule{\linewidth}{0.5mm} % Add another horizontal line
+    \end{center}%
+}
 
 % include a new sub file
 \newcommand{\includeSubFile}[1]{\subfile{#1}\newpage}
