@@ -30,5 +30,12 @@ struct Fenwick {
             i += (i & -i);
         }
     }
+
+    // Update range, Point query
+    // To get(k) do prefix sum [1, k] and in insert update_range(i, i, a[i])
+    void update_range(int l, int r, int v) {
+        update(l, v);
+        update(r+1, -v);
+    }
 };
 
