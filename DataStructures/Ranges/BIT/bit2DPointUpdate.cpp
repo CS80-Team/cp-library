@@ -16,8 +16,8 @@ struct BIT2D {
 
     int prefix(int x, int y) {
         int res = 0;
-        for (; x > 0; x -= x & -x) {
-            for (int i = y; i > 0; i -= i & -i) {
+        for (; x > 0; x &= ~(x & -x)) {
+            for (int i = y; i > 0; i &= ~(i & -i)) {
                 res += bit[x][i];
             }
         }

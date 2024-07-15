@@ -4,7 +4,6 @@ private:
     vector<int> B1, B2;
 
     void add(vector<int> &b, int idx, int x) {
-        ++idx;
         while (idx <= n) {
             b[idx] += x;
             idx += idx & -idx;
@@ -12,11 +11,10 @@ private:
     }
 
     int sum(vector<int> &b, int idx) {
-        idx++;
         int total = 0;
         while (idx > 0) {
             total += b[idx];
-            idx -= idx & -idx;
+            idx &= ~(idx & -idx);
         }
         return total;
     }
