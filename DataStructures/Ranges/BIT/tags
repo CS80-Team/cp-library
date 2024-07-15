@@ -44,6 +44,15 @@
 !_TAG_ROLE_DESCRIPTION!C++!macro	undef	/undefined/
 B1	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    vector<int> B1, B2;$/;"	m	struct:BITUpdateRange	typeref:typename:vector<int>	file:	access:private
 B2	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    vector<int> B1, B2;$/;"	m	struct:BITUpdateRange	typeref:typename:vector<int>	file:	access:private
+BIT2D	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    BIT2D(int n, int m) : n(n), m(m) {$/;"	f	struct:BIT2D	file:	access:public	signature:(int n,int m)
+BIT2D	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^struct BIT2D {$/;"	s	file:
+BIT2D::BIT2D	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    BIT2D(int n, int m) : n(n), m(m) {$/;"	f	struct:BIT2D	file:	access:public	signature:(int n,int m)
+BIT2D::bit	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    vector<vector<int>> bit;$/;"	m	struct:BIT2D	typeref:typename:vector<vector<int>>	file:	access:public
+BIT2D::m	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int n, m;$/;"	m	struct:BIT2D	typeref:typename:int	file:	access:public
+BIT2D::n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int n, m;$/;"	m	struct:BIT2D	typeref:typename:int	file:	access:public
+BIT2D::prefix	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int prefix(int x, int y) {$/;"	f	struct:BIT2D	typeref:typename:int	file:	access:public	signature:(int x,int y)
+BIT2D::query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int query(int sx, int sy, int ex, int ey) {$/;"	f	struct:BIT2D	typeref:typename:int	file:	access:public	signature:(int sx,int sy,int ex,int ey)
+BIT2D::update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    void update(int x, int y, int val) {$/;"	f	struct:BIT2D	typeref:typename:void	file:	access:public	signature:(int x,int y,int val)
 BITUpdateRange	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    explicit BITUpdateRange(int n) : n(n) {$/;"	f	struct:BITUpdateRange	file:	access:public	signature:(int n)
 BITUpdateRange	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^struct BITUpdateRange {$/;"	s	file:
 BITUpdateRange::B1	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    vector<int> B1, B2;$/;"	m	struct:BITUpdateRange	typeref:typename:vector<int>	file:	access:private
@@ -66,15 +75,21 @@ Fenwick::tree	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    vec
 Fenwick::update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    void update(int i, int v) {$/;"	f	struct:Fenwick	typeref:typename:void	file:	access:public	signature:(int i,int v)
 Fenwick::update_range	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    void update_range(int l, int r, int v) {$/;"	f	struct:Fenwick	typeref:typename:void	file:	access:public	signature:(int l,int r,int v)
 add	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    void add(vector<int> &b, int idx, int x) {$/;"	f	struct:BITUpdateRange	typeref:typename:void	file:	access:private	signature:(vector<int> & b,int idx,int x)
+bit	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    vector<vector<int>> bit;$/;"	m	struct:BIT2D	typeref:typename:vector<vector<int>>	file:	access:public
 get	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int get(int i) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int i)
+m	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int n, m;$/;"	m	struct:BIT2D	typeref:typename:int	file:	access:public
+n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int n, m;$/;"	m	struct:BIT2D	typeref:typename:int	file:	access:public
 n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int n;$/;"	m	struct:BITUpdateRange	typeref:typename:int	file:	access:private
+prefix	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int prefix(int x, int y) {$/;"	f	struct:BIT2D	typeref:typename:int	file:	access:public	signature:(int x,int y)
 prefix	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int prefix(int idx) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:private	signature:(int idx)
 query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int query(int i) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int i)
 query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int query(int l, int r) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int l,int r)
+query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int query(int sx, int sy, int ex, int ey) {$/;"	f	struct:BIT2D	typeref:typename:int	file:	access:public	signature:(int sx,int sy,int ex,int ey)
 query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int query(int i) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:public	signature:(int i)
 query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int query(int l, int r) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:public	signature:(int l,int r)
 sum	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int sum(vector<int> &b, int idx) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:private	signature:(vector<int> & b,int idx)
 tree	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    vector<int> tree;$/;"	m	struct:Fenwick	typeref:typename:vector<int>	file:	access:public
 update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    void update(int i, int v) {$/;"	f	struct:Fenwick	typeref:typename:void	file:	access:public	signature:(int i,int v)
+update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    void update(int x, int y, int val) {$/;"	f	struct:BIT2D	typeref:typename:void	file:	access:public	signature:(int x,int y,int val)
 update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    void update(int l, int r, int x) {$/;"	f	struct:BITUpdateRange	typeref:typename:void	file:	access:public	signature:(int l,int r,int x)
 update_range	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    void update_range(int l, int r, int v) {$/;"	f	struct:Fenwick	typeref:typename:void	file:	access:public	signature:(int l,int r,int v)
