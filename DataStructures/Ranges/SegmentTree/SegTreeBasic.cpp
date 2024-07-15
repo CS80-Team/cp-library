@@ -34,7 +34,7 @@ private:
     void build(vector<int> &a, int x, int lx, int rx) {
         if (rx - lx == 1) {
             if (lx < a.size()) {
-                values[x] = single(a[lx]);
+                values[x].val = a[lx];
             }
             return;
         }
@@ -42,6 +42,32 @@ private:
         build(a, 2 * x + 1, lx, m);
         build(a, 2 * x + 2, m, rx);
         values[x] = merge(values[2 * x + 1], values[2 * x + 2]);
+    }
+
+     void assign_range(int l, int r, int node, int lx, int rx, int time, int val) {
+        if (lx > r || l > rx) return;
+        if (lx >= l && rx <= r) {
+            lazy[node] = {time, val};
+            return;
+        }
+        int mid = (lx+rx) / 2;
+
+        assign_range(l, r, 2*node+1, lx, mid, time, val);
+        assign_range(l, r, 2*node+2, mid+1, rx, time, val);
+    }
+
+    pair<int, int> point_query(int lx, int rx, int node, int idx) {
+        if(rx == lx) return lazy[node];
+        int mid = (lx+rx) / 2;
+
+        if(idx <= mid) {
+            auto x = point_query(lx, mid, 2*node+1, idx);
+            if(x.first > lazy[node].first) return x;
+            return lazy[node];
+        }
+        auto x = point_query(mid+1, rx, 2*node+2, idx);
+        if(x.first > lazy[node].first) return x;
+        return lazy[node];
     }
 
 public:
