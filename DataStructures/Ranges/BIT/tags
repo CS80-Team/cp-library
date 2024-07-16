@@ -34,7 +34,7 @@
 !_TAG_OUTPUT_VERSION	0.0	/current.age/
 !_TAG_PARSER_VERSION!C++	1.1	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/home/ahmed/cp-library/	//
+!_TAG_PROC_CWD	/home/ahmed/cp-library/DataStructures/Ranges/BIT/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
@@ -65,54 +65,31 @@ BITUpdateRange::query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeU
 BITUpdateRange::query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int query(int l, int r) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:public	signature:(int l,int r)
 BITUpdateRange::sum	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int sum(vector<int> &b, int idx) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:private	signature:(vector<int> & b,int idx)
 BITUpdateRange::update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    void update(int l, int r, int x) {$/;"	f	struct:BITUpdateRange	typeref:typename:void	file:	access:public	signature:(int l,int r,int x)
-MOD	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^constexpr int MOD = 1e9+7; \/\/ must be a prime number$/;"	v	typeref:typename:int
-NEUTRAL	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    const Node NEUTRAL = {INT_MIN};$/;"	m	struct:SegTree	typeref:typename:const Node	file:	access:private
-Node	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^struct Node {$/;"	s	file:
-Node::val	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    long long val;$/;"	m	struct:Node	typeref:typename:long long	file:	access:public
-SegTree	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^struct SegTree {$/;"	s	file:
-SegTree::NEUTRAL	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    const Node NEUTRAL = {INT_MIN};$/;"	m	struct:SegTree	typeref:typename:const Node	file:	access:private
-SegTree::assign_range	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^     void assign_range(int l, int r, int node, int lx, int rx, int time, int val) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(int l,int r,int node,int lx,int rx,int time,int val)
-SegTree::build	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void build(vector<int> &a) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(vector<int> & a)
-SegTree::build	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void build(vector<int> &a, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(vector<int> & a,int x,int lx,int rx)
-SegTree::init	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void init(int _size) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int _size)
-SegTree::merge	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    static Node merge(const Node& x1, const Node& x2) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:private	signature:(const Node & x1,const Node & x2)
-SegTree::point_query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    pair<int, int> point_query(int lx, int rx, int node, int idx) {$/;"	f	struct:SegTree	typeref:typename:pair<int,int>	file:	access:private	signature:(int lx,int rx,int node,int idx)
-SegTree::query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    Node query(const int& l, const int& r) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:public	signature:(const int & l,const int & r)
-SegTree::query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    Node query(const int& l, const int& r, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:private	signature:(const int & l,const int & r,int x,int lx,int rx)
-SegTree::set	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void set(const int& idx, const int& val, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(const int & idx,const int & val,int x,int lx,int rx)
-SegTree::set	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void set(int idx, int val) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int idx,int val)
-SegTree::size	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    int size{};$/;"	m	struct:SegTree	typeref:typename:int	file:	access:public
-SegTree::values	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    vector<Node> values;$/;"	m	struct:SegTree	typeref:typename:vector<Node>	file:	access:public
+Fenwick	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    explicit Fenwick(int n) {tree.assign(n + 5, {});}$/;"	f	struct:Fenwick	file:	access:public	signature:(int n)
+Fenwick	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^struct Fenwick {$/;"	s	file:
+Fenwick::Fenwick	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    explicit Fenwick(int n) {tree.assign(n + 5, {});}$/;"	f	struct:Fenwick	file:	access:public	signature:(int n)
+Fenwick::get	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int get(int i) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int i)
+Fenwick::query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int query(int i) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int i)
+Fenwick::query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int query(int l, int r) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int l,int r)
+Fenwick::tree	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    vector<int> tree;$/;"	m	struct:Fenwick	typeref:typename:vector<int>	file:	access:public
+Fenwick::update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    void update(int i, int v) {$/;"	f	struct:Fenwick	typeref:typename:void	file:	access:public	signature:(int i,int v)
+Fenwick::update_range	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    void update_range(int l, int r, int v) {$/;"	f	struct:Fenwick	typeref:typename:void	file:	access:public	signature:(int l,int r,int v)
 add	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    void add(vector<int> &b, int idx, int x) {$/;"	f	struct:BITUpdateRange	typeref:typename:void	file:	access:private	signature:(vector<int> & b,int idx,int x)
-add	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int add(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
-assign_range	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^     void assign_range(int l, int r, int node, int lx, int rx, int time, int val) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(int l,int r,int node,int lx,int rx,int time,int val)
 bit	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    vector<vector<int>> bit;$/;"	m	struct:BIT2D	typeref:typename:vector<vector<int>>	file:	access:public
-build	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void build(vector<int> &a) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(vector<int> & a)
-build	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void build(vector<int> &a, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(vector<int> & a,int x,int lx,int rx)
-div	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int div(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
-erase_set	/home/ahmed/cp-library/DataStructures/OrderedSet/ordered_set.cpp	/^void erase_set(ordered_set &os, int v) {$/;"	f	typeref:typename:void	signature:(ordered_set & os,int v)
-init	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void init(int _size) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int _size)
-inverse	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int inverse(int a) {$/;"	f	typeref:typename:int	signature:(int a)
+get	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int get(int i) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int i)
 m	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int n, m;$/;"	m	struct:BIT2D	typeref:typename:int	file:	access:public
-merge	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    static Node merge(const Node& x1, const Node& x2) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:private	signature:(const Node & x1,const Node & x2)
 n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int n, m;$/;"	m	struct:BIT2D	typeref:typename:int	file:	access:public
 n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int n;$/;"	m	struct:BITUpdateRange	typeref:typename:int	file:	access:private
-ordered_set	/home/ahmed/cp-library/DataStructures/OrderedSet/ordered_set.cpp	/^using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;$/;"	t	typeref:typename:tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>	file:
-point_query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    pair<int, int> point_query(int lx, int rx, int node, int idx) {$/;"	f	struct:SegTree	typeref:typename:pair<int,int>	file:	access:private	signature:(int lx,int rx,int node,int idx)
-power	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int power(int a, int e) {$/;"	f	typeref:typename:int	signature:(int a,int e)
 prefix	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int prefix(int x, int y) {$/;"	f	struct:BIT2D	typeref:typename:int	file:	access:public	signature:(int x,int y)
 prefix	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int prefix(int idx) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:private	signature:(int idx)
+query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int query(int i) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int i)
+query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    int query(int l, int r) {$/;"	f	struct:Fenwick	typeref:typename:int	file:	access:public	signature:(int l,int r)
 query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int query(int sx, int sy, int ex, int ey) {$/;"	f	struct:BIT2D	typeref:typename:int	file:	access:public	signature:(int sx,int sy,int ex,int ey)
 query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int query(int i) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:public	signature:(int i)
 query	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int query(int l, int r) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:public	signature:(int l,int r)
-query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    Node query(const int& l, const int& r) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:public	signature:(const int & l,const int & r)
-query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    Node query(const int& l, const int& r, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:private	signature:(const int & l,const int & r,int x,int lx,int rx)
-set	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void set(const int& idx, const int& val, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(const int & idx,const int & val,int x,int lx,int rx)
-set	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void set(int idx, int val) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int idx,int val)
-size	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    int size{};$/;"	m	struct:SegTree	typeref:typename:int	file:	access:public
-sub	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int sub(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
 sum	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int sum(vector<int> &b, int idx) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:private	signature:(vector<int> & b,int idx)
+tree	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    vector<int> tree;$/;"	m	struct:Fenwick	typeref:typename:vector<int>	file:	access:public
+update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    void update(int i, int v) {$/;"	f	struct:Fenwick	typeref:typename:void	file:	access:public	signature:(int i,int v)
 update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    void update(int x, int y, int val) {$/;"	f	struct:BIT2D	typeref:typename:void	file:	access:public	signature:(int x,int y,int val)
 update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    void update(int l, int r, int x) {$/;"	f	struct:BITUpdateRange	typeref:typename:void	file:	access:public	signature:(int l,int r,int x)
-val	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    long long val;$/;"	m	struct:Node	typeref:typename:long long	file:	access:public
-values	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    vector<Node> values;$/;"	m	struct:SegTree	typeref:typename:vector<Node>	file:	access:public
+update_range	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit.cpp	/^    void update_range(int l, int r, int v) {$/;"	f	struct:Fenwick	typeref:typename:void	file:	access:public	signature:(int l,int r,int v)
