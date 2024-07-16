@@ -7,10 +7,11 @@ private:
             lazy[2*node+1] = lazy[node];
             lazy[2*node+2] = lazy[node];
         }
-        values[node] = lazy[node];
+        values[node] = lazy[node] * (rx - lx + 1);
         lazy[node] = 0;
     }
 
+    // assign val in range [l, r]
     void update_range(int l, int r, int node, int lx, int rx, int val, bool f) {
         propegate(lx, rx, node);
         if (lx > r || l > rx) return;
@@ -26,6 +27,7 @@ private:
         values[node] = values[2*node+1] + values[2*node+2];
     }
 
+    // get sum in range [l, r]
     int range_query(int l, int r, int lx, int rx, int node) {
         propegate(lx, rx, node);
         if (lx > r || l > rx) return 0;
