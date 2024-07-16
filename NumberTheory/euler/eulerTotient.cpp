@@ -15,3 +15,6 @@ int eulerTotient(int n){
     return result;
 }
 
+//Phi(n) = n * (1 - 1/P1) * (1 - 1/P2) * ...
+
+//NOTE: summation of Euler function over divisors of n is equal to n
