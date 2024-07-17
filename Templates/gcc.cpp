@@ -5,4 +5,4 @@
 #pragma GCC target ("avx,avx2")
 
 // slows down run time but throws a Runtime Error if an overflow occured
-#pramga GCC optimize("trapv")
+#pragma GCC optimize("trapv")
