@@ -18,3 +18,14 @@
 
      \subsubsection{Min absolute difference between 2 elements from (L, R) (DP Ranges)}
           \includeCode{c++}{Min absolute difference}{lhstyle}{solutions/MinAbsDiff(L ,R).cpp}
+
+     \subsubsection{Longest common subsequence between 2 Strings}
+            \[
+            \text{dp}[i][j] =
+            \begin{cases}
+                \max(\text{dp}[i-1][j], \text{dp}[i][j-1]) & \text{if } A_i \neq B_j \\
+                \text{dp}[i-1][j-1] + 1 & \text{if } A_i = B_j
+            \end{cases}
+            \]
+
+          \includeCode{c++}{LIS 2 Strings}{lhstyle}{solutions/longestCommonSubsequence2Strings.cpp}
