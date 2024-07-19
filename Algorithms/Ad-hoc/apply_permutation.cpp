@@ -1,5 +1,5 @@
 // Applying a permutation k times
-// O(n logk)  
+// n log k
 
 vector<int> applyPermutation(vector<int> sequence, vector<int> permutation) {
     vector<int> newSequence(sequence.size());
