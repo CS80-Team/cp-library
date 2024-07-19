@@ -37,6 +37,18 @@ public:
         int j = static_cast<int>(log2(right - left + 1));
         return merge(table[left][j], table[right - (1 << j) + 1][j]);
     }
+
+    // query in O(log(n)) if its could't apply to Sparse Table directly
+    T query_log(int l, int r){
+      int len = r - l + 1;
+      T ans;
+      for(int i = 0; l <= r; i++){
+          if (len & (1 << i)){
+              ans = merge(ans, table[i][l]);
+              l+= (1 << i);
+          }
+      }
+   }
 };
 
 
