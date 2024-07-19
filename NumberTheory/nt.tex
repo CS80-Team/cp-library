@@ -7,3 +7,73 @@
         \includeCode{c++} {prime factorization}{lhstyle}{factorization/pf.cpp}
         \includeCode{c++} {number of co-primes with n}{lhstyle}{euler/eulerTotient.cpp}
         \includeCode{c++} {Prime Check}{lhstyle}{primes.cpp}
+
+
+    \subsection{Math}
+        \subsubsection{Vieta's Formulas for a Polynomial of Degree \( n \)}
+
+        \textbf{Problem}: Given a polynomial of degree \( n \):
+
+        \[
+        P(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0
+        \]
+
+        with roots \( r_1, r_2, \ldots, r_n \), express the sums and products of its roots using Vieta's formulas.
+
+        \textbf{Solution}:
+        Using Vieta's formulas, we can relate the coefficients of the polynomial to sums and products of its roots:
+
+        \begin{itemize}
+            \item Sum of the roots taken one at a time:
+            \[
+            r_1 + r_2 + \cdots + r_n = -\frac{a_{n-1}}{a_n}
+            \]
+            \item Sum of the products of the roots taken two at a time:
+            \[
+            r_1r_2 + r_1r_3 + \cdots + r_{n-1}r_n = \frac{a_{n-2}}{a_n}
+            \]
+            \item Sum of the products of the roots taken three at a time:
+            \[
+            r_1r_2r_3 + r_1r_2r_4 + \cdots + r_{n-2}r_{n-1}r_n = -\frac{a_{n-3}}{a_n}
+            \]
+            \item Continue this pattern until:
+            \item Product of the roots (for even \( n \)):
+            \[
+            r_1 r_2 \cdots r_n = (-1)^n \frac{a_0}{a_n}
+            \]
+        \end{itemize}
+
+        \subsubsection*{Example Problem Using Vieta's Formulas}
+
+        \textbf{Problem}: Given a quadratic equation \(x^2 + bx + c = 0\) with roots \(r_1\) and \(r_2\), find \(r_1 + r_2\) and \(r_1r_2\).
+
+        \textbf{Solution}:
+        Using Vieta's formulas for a quadratic equation \(ax^2 + bx + c = 0\):
+
+        \begin{itemize}
+            \item Sum of the roots:
+            \[
+            r_1 + r_2 = -\frac{b}{a}
+            \]
+            \item Product of the roots:
+            \[
+            r_1r_2 = \frac{c}{a}
+            \]
+        \end{itemize}
+
+        For the given quadratic \(x^2 + bx + c = 0\) (where \(a = 1\)):
+
+        \begin{itemize}
+            \item \(r_1 + r_2 = -b\)
+            \item \(r_1r_2 = c\)
+        \end{itemize}
+
+        \subsubsection*{Example Vieta's Formula for Cubic Equation}
+
+        When considering a cubic equation in the form of \( f(x) = ax^3 + bx^2 + cx + d \), Vieta's formula states that if the equation \( f(x) = 0 \) has roots \( r_1, r_2, \) and \( r_3 \), then:
+
+        \begin{itemize}
+            \item \( r_1 + r_2 + r_3 = -\frac{b}{a} \)
+            \item \( r_1r_2 + r_2r_3 + r_3r_1 = \frac{c}{a} \)
+            \item \( r_1r_2r_3 = -\frac{d}{a} \)
+        \end{itemize}
