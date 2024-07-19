@@ -69,6 +69,9 @@ MOD	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^constexpr int MOD = 1e9+7
 NEUTRAL	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    const Node NEUTRAL = {INT_MIN};$/;"	m	struct:SegTree	typeref:typename:const Node	file:	access:private
 Node	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^struct Node {$/;"	s	file:
 Node::val	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    long long val;$/;"	m	struct:Node	typeref:typename:long long	file:	access:public
+OFF	/home/ahmed/cp-library/Templates/macros.cpp	/^#define OFF(/;"	d	file:	signature:(n,idx)
+ON	/home/ahmed/cp-library/Templates/macros.cpp	/^#define ON(/;"	d	file:	signature:(n,idx)
+PI	/home/ahmed/cp-library/Templates/macros.cpp	/^const double PI = acos(-1.0);$/;"	v	typeref:typename:const double
 SegTree	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^struct SegTree {$/;"	s	file:
 SegTree	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^struct SegTree {$/;"	s	file:
 SegTree::NEUTRAL	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    const Node NEUTRAL = {INT_MIN};$/;"	m	struct:SegTree	typeref:typename:const Node	file:	access:private
@@ -95,12 +98,22 @@ SegTree::values	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTree
 SegTree::values	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^    vector<int> values, lazy;$/;"	m	struct:SegTree	typeref:typename:vector<int>	file:	access:public
 add	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    void add(vector<int> &b, int idx, int x) {$/;"	f	struct:BITUpdateRange	typeref:typename:void	file:	access:private	signature:(vector<int> & b,int idx,int x)
 add	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int add(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
+angle	/home/ahmed/cp-library/Templates/macros.cpp	/^#define angle(/;"	d	file:	signature:(a)
 assign_range	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^     void assign_range(int l, int r, int node, int lx, int rx, int time, int val) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(int l,int r,int node,int lx,int rx,int time,int val)
 bit	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    vector<vector<int>> bit;$/;"	m	struct:BIT2D	typeref:typename:vector<vector<int>>	file:	access:public
+bitCount	/home/ahmed/cp-library/Templates/macros.cpp	/^#define bitCount(/;"	d	file:	signature:(x)
 build	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void build(vector<int> &a) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(vector<int> & a)
 build	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void build(vector<int> &a, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(vector<int> & a,int x,int lx,int rx)
+ceil_i	/home/ahmed/cp-library/Templates/macros.cpp	/^#define ceil_i(/;"	d	file:	signature:(a,b)
+clz	/home/ahmed/cp-library/Templates/macros.cpp	/^#define clz(x) (__builtin_clzl/;"	d	file:	signature:(x)
+crossProduct	/home/ahmed/cp-library/Templates/macros.cpp	/^#define crossProduct(/;"	d	file:	signature:(a,b)
+ctz	/home/ahmed/cp-library/Templates/macros.cpp	/^#define ctz(x) (__builtin_ctzl/;"	d	file:	signature:(x)
 div	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int div(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
+dotProduct	/home/ahmed/cp-library/Templates/macros.cpp	/^#define dotProduct(/;"	d	file:	signature:(a,b)
 erase_set	/home/ahmed/cp-library/DataStructures/OrderedSet/ordered_set.cpp	/^void erase_set(ordered_set &os, int v) {$/;"	f	typeref:typename:void	signature:(ordered_set & os,int v)
+floor_i	/home/ahmed/cp-library/Templates/macros.cpp	/^#define floor_i(/;"	d	file:	signature:(a,b)
+getBit	/home/ahmed/cp-library/Templates/macros.cpp	/^#define getBit(/;"	d	file:	signature:(n,k)
+gray	/home/ahmed/cp-library/Templates/macros.cpp	/^#define gray(/;"	d	file:	signature:(n)
 init	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void init(int _size) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int _size)
 init	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^    void init(int _size) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int _size)
 inverse	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int inverse(int a) {$/;"	f	typeref:typename:int	signature:(int a)
@@ -109,6 +122,7 @@ m	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    in
 merge	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    static Node merge(const Node& x1, const Node& x2) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:private	signature:(const Node & x1,const Node & x2)
 n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int n, m;$/;"	m	struct:BIT2D	typeref:typename:int	file:	access:public
 n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int n;$/;"	m	struct:BITUpdateRange	typeref:typename:int	file:	access:private
+normalize	/home/ahmed/cp-library/Templates/macros.cpp	/^#define normalize(/;"	d	file:	signature:(a)
 ordered_set	/home/ahmed/cp-library/DataStructures/OrderedSet/ordered_set.cpp	/^using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;$/;"	t	typeref:typename:tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>	file:
 point_query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    pair<int, int> point_query(int lx, int rx, int node, int idx) {$/;"	f	struct:SegTree	typeref:typename:pair<int,int>	file:	access:private	signature:(int lx,int rx,int node,int idx)
 power	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int power(int a, int e) {$/;"	f	typeref:typename:int	signature:(int a,int e)
@@ -122,12 +136,21 @@ query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	
 query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    Node query(const int& l, const int& r, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:private	signature:(const int & l,const int & r,int x,int lx,int rx)
 range_query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^    int range_query(int l, int r) {$/;"	f	struct:SegTree	typeref:typename:int	file:	access:public	signature:(int l,int r)
 range_query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^    int range_query(int l, int r, int lx, int rx, int node) {$/;"	f	struct:SegTree	typeref:typename:int	file:	access:private	signature:(int l,int r,int lx,int rx,int node)
+reflectO	/home/ahmed/cp-library/Templates/macros.cpp	/^#define reflectO(/;"	d	file:	signature:(v,m)
+rotateA	/home/ahmed/cp-library/Templates/macros.cpp	/^#define rotateA(/;"	d	file:	signature:(p,ang,about)
+rotateO	/home/ahmed/cp-library/Templates/macros.cpp	/^#define rotateO(/;"	d	file:	signature:(v,ang)
+round_i	/home/ahmed/cp-library/Templates/macros.cpp	/^#define round_i(/;"	d	file:	signature:(a,b)
+round_m	/home/ahmed/cp-library/Templates/macros.cpp	/^#define round_m(/;"	d	file:	signature:(a,b)
+round_multiple	/home/ahmed/cp-library/Templates/macros.cpp	/^#define round_multiple(/;"	d	file:	signature:(n,m)
+same	/home/ahmed/cp-library/Templates/macros.cpp	/^#define same(/;"	d	file:	signature:(v1,v2)
 set	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void set(const int& idx, const int& val, int x, int lx, int rx) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(const int & idx,const int & val,int x,int lx,int rx)
 set	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void set(int idx, int val) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int idx,int val)
 size	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    int size{};$/;"	m	struct:SegTree	typeref:typename:int	file:	access:public
 size	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^    int size{};$/;"	m	struct:SegTree	typeref:typename:int	file:	access:public
 sub	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int sub(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
 sum	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int sum(vector<int> &b, int idx) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:private	signature:(vector<int> & b,int idx)
+toggle	/home/ahmed/cp-library/Templates/macros.cpp	/^#define toggle(/;"	d	file:	signature:(n,idx)
+uniq	/home/ahmed/cp-library/Templates/macros.cpp	/^#define uniq(x) x.resize(uniqu/;"	d	file:	signature:(x)
 update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    void update(int x, int y, int val) {$/;"	f	struct:BIT2D	typeref:typename:void	file:	access:public	signature:(int x,int y,int val)
 update	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    void update(int l, int r, int x) {$/;"	f	struct:BITUpdateRange	typeref:typename:void	file:	access:public	signature:(int l,int r,int x)
 update_range	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^    void update_range(int l, int r, int node, int lx, int rx, int val, bool f) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(int l,int r,int node,int lx,int rx,int val,bool f)

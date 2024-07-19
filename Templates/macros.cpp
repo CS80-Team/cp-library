@@ -4,6 +4,8 @@
 #define toggle(n, idx) ((n) ^ (1ll<<(idx)))
 #define gray(n) (n ^ (n >> 1))
 #define bitCount(x) (__builtin_popcountll(x))
+#define clz(x) (__builtin_clzll(x))
+#define ctz(x) (__builtin_ctzll(x))
 #define uniq(x) x.resize(unique(x.begin(), x.end())-x.begin());
 
 #define angle(a) (atan2((a).imag(), (a).real()))
