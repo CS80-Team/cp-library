@@ -48,6 +48,8 @@ Query	/home/ahmed/cp-library/Algorithms/MO.cpp	/^vector<query> Query(m);$/;"	p	t
 add	/home/ahmed/cp-library/Algorithms/MO.cpp	/^void add(int idx) {$/;"	f	typeref:typename:void	signature:(int idx)
 ans	/home/ahmed/cp-library/Algorithms/MO.cpp	/^int freq[N], ans;$/;"	v	typeref:typename:int
 block_idx	/home/ahmed/cp-library/Algorithms/MO.cpp	/^    int idx, block_idx, l, r;$/;"	m	struct:query	typeref:typename:int	file:	access:public
+countingSort	/home/ahmed/cp-library/Algorithms/Sorting/counting_sort.cpp	/^void countingSort(vector<int>& arr) {$/;"	f	typeref:typename:void	signature:(vector<int> & arr)
+countingSort	/home/ahmed/cp-library/Algorithms/Sorting/radix_sort.cpp	/^void countingSort(vector<int>& arr, int exp) {$/;"	f	typeref:typename:void	signature:(vector<int> & arr,int exp)
 freq	/home/ahmed/cp-library/Algorithms/MO.cpp	/^int freq[N], ans;$/;"	v	typeref:typename:int[]
 i	/home/ahmed/cp-library/Algorithms/MO.cpp	/^for (int i = 0; i < m; ++i) {$/;"	v	typeref:typename:int
 i	/home/ahmed/cp-library/Algorithms/MO.cpp	/^for (int i = 0; i < n; ++i) cin >> nums[i];$/;"	v	typeref:typename:int
@@ -73,4 +75,5 @@ query::r	/home/ahmed/cp-library/Algorithms/MO.cpp	/^    int idx, block_idx, l, r
 r	/home/ahmed/cp-library/Algorithms/MO.cpp	/^    int idx, block_idx, l, r;$/;"	m	struct:query	typeref:typename:int	file:	access:public
 r	/home/ahmed/cp-library/Algorithms/MO.cpp	/^    int l, r; cin >> l >> r;$/;"	v	typeref:typename:int
 r0	/home/ahmed/cp-library/Algorithms/MO.cpp	/^int l0 = 1, r0 = 0;$/;"	v	typeref:typename:int
+radixSort	/home/ahmed/cp-library/Algorithms/Sorting/radix_sort.cpp	/^void radixSort(vector<int>& arr) {$/;"	f	typeref:typename:void	signature:(vector<int> & arr)
 remove	/home/ahmed/cp-library/Algorithms/MO.cpp	/^void remove(int idx) {$/;"	f	typeref:typename:void	signature:(int idx)
