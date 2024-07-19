@@ -113,6 +113,7 @@ __anon407167c00202	/home/ahmed/cp-library/DataStructures/Ranges/SparseTable/Spar
 add	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    void add(vector<int> &b, int idx, int x) {$/;"	f	struct:BITUpdateRange	typeref:typename:void	file:	access:private	signature:(vector<int> & b,int idx,int x)
 add	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int add(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
 angle	/home/ahmed/cp-library/Templates/macros.cpp	/^#define angle(/;"	d	file:	signature:(a)
+applyPermutation	/home/ahmed/cp-library/Algorithms/Ad-hoc/apply_permutation.cpp	/^vector<int> applyPermutation(vector<int> sequence, vector<int> permutation) {$/;"	f	typeref:typename:vector<int>	signature:(vector<int> sequence,vector<int> permutation)
 assign_range	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^     void assign_range(int l, int r, int node, int lx, int rx, int time, int val) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:private	signature:(int l,int r,int node,int lx,int rx,int time,int val)
 bit	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    vector<vector<int>> bit;$/;"	m	struct:BIT2D	typeref:typename:vector<vector<int>>	file:	access:public
 bitCount	/home/ahmed/cp-library/Templates/macros.cpp	/^#define bitCount(/;"	d	file:	signature:(x)
@@ -146,6 +147,7 @@ n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int 
 n	/home/ahmed/cp-library/NumberTheory/mobius.cpp	/^int n = 4;$/;"	v	typeref:typename:int
 normalize	/home/ahmed/cp-library/Templates/macros.cpp	/^#define normalize(/;"	d	file:	signature:(a)
 ordered_set	/home/ahmed/cp-library/DataStructures/OrderedSet/ordered_set.cpp	/^using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;$/;"	t	typeref:typename:tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>	file:
+permute	/home/ahmed/cp-library/Algorithms/Ad-hoc/apply_permutation.cpp	/^vector<int> permute(vector<int> sequence, vector<int> permutation, long long k) {$/;"	f	typeref:typename:vector<int>	signature:(vector<int> sequence,vector<int> permutation,long long k)
 phi_factn	/home/ahmed/cp-library/NumberTheory/euler/eulerTotient.cpp	/^ll phi_factn(int n) {$/;"	f	typeref:typename:ll	signature:(int n)
 phi_generator	/home/ahmed/cp-library/NumberTheory/euler/eulerTotient.cpp	/^void phi_generator() {$/;"	f	typeref:typename:void	signature:()
 point_query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    pair<int, int> point_query(int lx, int rx, int node, int idx) {$/;"	f	struct:SegTree	typeref:typename:pair<int,int>	file:	access:private	signature:(int lx,int rx,int node,int idx)
