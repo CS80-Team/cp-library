@@ -125,9 +125,11 @@ ctz	/home/ahmed/cp-library/Templates/macros.cpp	/^#define ctz(x) (__builtin_ctzl
 div	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int div(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
 dotProduct	/home/ahmed/cp-library/Templates/macros.cpp	/^#define dotProduct(/;"	d	file:	signature:(a,b)
 erase_set	/home/ahmed/cp-library/DataStructures/OrderedSet/ordered_set.cpp	/^void erase_set(ordered_set &os, int v) {$/;"	f	typeref:typename:void	signature:(ordered_set & os,int v)
+eulerTotient	/home/ahmed/cp-library/NumberTheory/euler/eulerTotient.cpp	/^int eulerTotient(int n){$/;"	f	typeref:typename:int	signature:(int n)
 floor_i	/home/ahmed/cp-library/Templates/macros.cpp	/^#define floor_i(/;"	d	file:	signature:(a,b)
 getBit	/home/ahmed/cp-library/Templates/macros.cpp	/^#define getBit(/;"	d	file:	signature:(n,k)
 gray	/home/ahmed/cp-library/Templates/macros.cpp	/^#define gray(/;"	d	file:	signature:(n)
+i	/home/ahmed/cp-library/NumberTheory/mobius.cpp	/^for (ll i = 2; i <= n; ++i)$/;"	v	typeref:typename:ll
 index	/home/ahmed/cp-library/DataStructures/Ranges/SparseTable/SparseBasic.cpp	/^    int index;$/;"	m	struct:SNode	typeref:typename:int	file:	access:public
 init	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    void init(int _size) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int _size)
 init	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^    void init(int _size) {$/;"	f	struct:SegTree	typeref:typename:void	file:	access:public	signature:(int _size)
@@ -137,10 +139,15 @@ m	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    in
 main	/home/ahmed/cp-library/DataStructures/Ranges/SparseTable/SparseBasic.cpp	/^int main(void) {$/;"	f	typeref:typename:int	signature:(void)
 merge	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    static Node merge(const Node& x1, const Node& x2) {$/;"	f	struct:SegTree	typeref:typename:Node	file:	access:private	signature:(const Node & x1,const Node & x2)
 merge	/home/ahmed/cp-library/DataStructures/Ranges/SparseTable/SparseBasic.cpp	/^    function<SNode(const SNode&, const SNode&)> merge;$/;"	m	class:SparseTable	typeref:typename:function<SNode (const SNode &,const SNode &)>	file:	access:private
+mobius	/home/ahmed/cp-library/NumberTheory/mobius.cpp	/^int mobius(int n) {$/;"	f	typeref:typename:int	signature:(int n)
+mobius_generator	/home/ahmed/cp-library/NumberTheory/mobius.cpp	/^void mobius_generator() const {$/;"	f	typeref:typename:void	signature:() const
 n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int n, m;$/;"	m	struct:BIT2D	typeref:typename:int	file:	access:public
 n	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int n;$/;"	m	struct:BITUpdateRange	typeref:typename:int	file:	access:private
+n	/home/ahmed/cp-library/NumberTheory/mobius.cpp	/^int n = 4;$/;"	v	typeref:typename:int
 normalize	/home/ahmed/cp-library/Templates/macros.cpp	/^#define normalize(/;"	d	file:	signature:(a)
 ordered_set	/home/ahmed/cp-library/DataStructures/OrderedSet/ordered_set.cpp	/^using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;$/;"	t	typeref:typename:tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>	file:
+phi_factn	/home/ahmed/cp-library/NumberTheory/euler/eulerTotient.cpp	/^ll phi_factn(int n) {$/;"	f	typeref:typename:ll	signature:(int n)
+phi_generator	/home/ahmed/cp-library/NumberTheory/euler/eulerTotient.cpp	/^void phi_generator() {$/;"	f	typeref:typename:void	signature:()
 point_query	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/^    pair<int, int> point_query(int lx, int rx, int node, int idx) {$/;"	f	struct:SegTree	typeref:typename:pair<int,int>	file:	access:private	signature:(int lx,int rx,int node,int idx)
 power	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int power(int a, int e) {$/;"	f	typeref:typename:int	signature:(int a,int e)
 prefix	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bit2DPointUpdate.cpp	/^    int prefix(int x, int y) {$/;"	f	struct:BIT2D	typeref:typename:int	file:	access:public	signature:(int x,int y)
@@ -168,6 +175,7 @@ size	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/SegTreeBasic.cpp	/
 size	/home/ahmed/cp-library/DataStructures/Ranges/SegmentTree/lazy_propegate.cpp	/^    int size{};$/;"	m	struct:SegTree	typeref:typename:int	file:	access:public
 sub	/home/ahmed/cp-library/Templates/modTemplate.cpp	/^int sub(int a, int b) {$/;"	f	typeref:typename:int	signature:(int a,int b)
 sum	/home/ahmed/cp-library/DataStructures/Ranges/BIT/bitRangeUpdate.cpp	/^    int sum(vector<int> &b, int idx) {$/;"	f	struct:BITUpdateRange	typeref:typename:int	file:	access:private	signature:(vector<int> & b,int idx)
+sum	/home/ahmed/cp-library/NumberTheory/mobius.cpp	/^ll sum = n * n * n;$/;"	v	typeref:typename:ll
 table	/home/ahmed/cp-library/DataStructures/Ranges/SparseTable/SparseBasic.cpp	/^    vector<vector<SNode>> table;$/;"	m	class:SparseTable	typeref:typename:vector<vector<SNode>>	file:	access:private
 toggle	/home/ahmed/cp-library/Templates/macros.cpp	/^#define toggle(/;"	d	file:	signature:(n,idx)
 uniq	/home/ahmed/cp-library/Templates/macros.cpp	/^#define uniq(x) x.resize(uniqu/;"	d	file:	signature:(x)
