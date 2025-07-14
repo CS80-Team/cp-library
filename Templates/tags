@@ -42,21 +42,28 @@
 !_TAG_ROLE_DESCRIPTION!C++!header	local	/local header/
 !_TAG_ROLE_DESCRIPTION!C++!header	system	/system header/
 !_TAG_ROLE_DESCRIPTION!C++!macro	undef	/undefined/
+MAX_N	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^constexpr int MAX_N = 201, MOD = 1e9+7;$/;"	v	typeref:typename:int
+MOD	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^constexpr int MAX_N = 201, MOD = 1e9+7;$/;"	v	typeref:typename:int
+Matrix	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^struct Matrix { int mat[MAX_N][MAX_N]; }; \/\/ we return a 2D array$/;"	s	file:
+Matrix::mat	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^struct Matrix { int mat[MAX_N][MAX_N]; }; \/\/ we return a 2D array$/;"	m	struct:Matrix	typeref:typename:int[][]	file:	access:public
 OFF	/home/ahmed/cp-library/Templates/macros.cpp	/^#define OFF(/;"	d	file:	signature:(n,idx)
 ON	/home/ahmed/cp-library/Templates/macros.cpp	/^#define ON(/;"	d	file:	signature:(n,idx)
 PI	/home/ahmed/cp-library/Templates/macros.cpp	/^const double PI = acos(-1.0);$/;"	v	typeref:typename:const double
 angle	/home/ahmed/cp-library/Templates/macros.cpp	/^#define angle(/;"	d	file:	signature:(a)
 bitCount	/home/ahmed/cp-library/Templates/macros.cpp	/^#define bitCount(/;"	d	file:	signature:(x)
 ceil_i	/home/ahmed/cp-library/Templates/macros.cpp	/^#define ceil_i(/;"	d	file:	signature:(a,b)
+clz	/home/ahmed/cp-library/Templates/macros.cpp	/^#define clz(x) (__builtin_clzl/;"	d	file:	signature:(x)
 crossProduct	/home/ahmed/cp-library/Templates/macros.cpp	/^#define crossProduct(/;"	d	file:	signature:(a,b)
+ctz	/home/ahmed/cp-library/Templates/macros.cpp	/^#define ctz(x) (__builtin_ctzl/;"	d	file:	signature:(x)
 dotProduct	/home/ahmed/cp-library/Templates/macros.cpp	/^#define dotProduct(/;"	d	file:	signature:(a,b)
-dx	/home/ahmed/cp-library/Templates/macros.cpp	/^int dx[4] = {1, -1, 0, 0};$/;"	v	typeref:typename:int[4]
-dx	/home/ahmed/cp-library/Templates/macros.cpp	/^int dx[8] = {1, 1, -1, -1, 2, 2, -2, -2};$/;"	v	typeref:typename:int[8]
-dy	/home/ahmed/cp-library/Templates/macros.cpp	/^int dy[4] = {0, 0, 1, -1};$/;"	v	typeref:typename:int[4]
-dy	/home/ahmed/cp-library/Templates/macros.cpp	/^int dy[8] = {2, -2, 2, -2, 1, -1, 1, -1};$/;"	v	typeref:typename:int[8]
 floor_i	/home/ahmed/cp-library/Templates/macros.cpp	/^#define floor_i(/;"	d	file:	signature:(a,b)
 getBit	/home/ahmed/cp-library/Templates/macros.cpp	/^#define getBit(/;"	d	file:	signature:(n,k)
 gray	/home/ahmed/cp-library/Templates/macros.cpp	/^#define gray(/;"	d	file:	signature:(n)
+mat	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^struct Matrix { int mat[MAX_N][MAX_N]; }; \/\/ we return a 2D array$/;"	m	struct:Matrix	typeref:typename:int[][]	file:	access:public
+matMul	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^Matrix matMul(Matrix a, Matrix b) { \/\/ normally O(n^3)$/;"	f	typeref:typename:Matrix	signature:(Matrix a,Matrix b)
+matMul	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^Matrix matMul(Matrix a, Matrix b, int p, int q, int r) { \/\/ O(pqr)$/;"	f	typeref:typename:Matrix	signature:(Matrix a,Matrix b,int p,int q,int r)
+matPow	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^Matrix matPow(Matrix base, int p) { \/\/ normally O(n^3 log p)$/;"	f	typeref:typename:Matrix	signature:(Matrix base,int p)
+mod	/home/ahmed/cp-library/Templates/matrixExp.cpp	/^ll mod(ll a, ll m) { return ((a%m)+m) % m; } \/\/ ensure positive answer$/;"	f	typeref:typename:ll	signature:(ll a,ll m)
 normalize	/home/ahmed/cp-library/Templates/macros.cpp	/^#define normalize(/;"	d	file:	signature:(a)
 reflectO	/home/ahmed/cp-library/Templates/macros.cpp	/^#define reflectO(/;"	d	file:	signature:(v,m)
 rotateA	/home/ahmed/cp-library/Templates/macros.cpp	/^#define rotateA(/;"	d	file:	signature:(p,ang,about)
