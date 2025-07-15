@@ -1,4 +1,4 @@
-#define getBit(n, k) (n >> k) // & 0
+#define getBit(n, k) (n >> k) // & 1
 #define ON(n, idx) (n | (1ll << idx))
 #define OFF(n, idx) (n & ~(1ll << idx))
 #define toggle(n, idx) ((n) ^ (1ll<<(idx)))
