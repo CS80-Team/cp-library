@@ -1,5 +1,5 @@
-% Packages
-\documentclass[a4paper, twocolumn, landscape, 12pt]{article}
+\documentclass[a4paper, landscape, 12pt]{article}
+
 \usepackage{lipsum}
 \usepackage{blindtext}
 \usepackage{titlesec}
@@ -42,9 +42,13 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[L]{\textit{\teamname \space (\univname)}}
+\renewcommand{\footrulewidth}{0pt}
 
-% Importing custom styles from `Styles` file
+\fancyhead[L]{\textit{\teamname \space (\univname)}}
+\fancyhead[R]{\thepage}
+
+
+% Importing custom styles from `Styles` directory
 \input{Styles/BlackWhite.sty}
 \input{Styles/LightHighlight.sty}
 \input{Styles/Colors.sty}
@@ -54,10 +58,11 @@
 	left=1cm,
 	right=1cm,
 	top=1.7cm,
-	bottom=0.5cm
+	bottom=1cm
 }
 
 \begin{document}
+	\twocolumn
 	\maketitle
 	\tableofcontents
 	\newpage
