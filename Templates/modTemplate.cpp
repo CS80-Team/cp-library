@@ -16,6 +16,16 @@ int power(int a, int e) {
     return res;
 }
 
+
+---------------------------------------------------------
+                                                         |
+// note -> from Fermat little theorem, we can deduce that| 
+// a^(BIG) % prime = (a ^ (BIG%(prime - 1)))%prime       |
+// because every a^(prime - 1) is equal to 1             |
+// from the identity says a^(prime - 1) % prime = 1      |
+                                                         |
+---------------------------------------------------------
+
 int inverse(int a) {
     return power(a, MOD-2);
 }
